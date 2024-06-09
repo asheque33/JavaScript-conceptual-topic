@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+      // Define user
+      const user = {
+        name: "John Doe",
+        email: "john.doe@example.com",
+        age: 24,
+        gender: "male",
+      };
+      // Your JSX code goes here
+      function UserDetails() {
+        return (
+          //   <ul>
+          //     {Object.keys(user).map((key) => (
+          //       <li key={key}>
+          //         {key}: {user[key]}
+          //       </li>
+          //     ))}
+          //   </ul>
+          <table>
+            <tbody>
+              <tr>
+                <th>Key</th>
+                <th>Value</th>
+              </tr>
+              {Object.entries(user).map(([key, value]) => (
+                <tr key={key}>
+                  <td>{key}</td> : <td>{value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        );
+      }
+
+      ReactDOM.render(<UserDetails />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
