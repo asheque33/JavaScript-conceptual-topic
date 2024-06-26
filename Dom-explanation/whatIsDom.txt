@@ -88,3 +88,6 @@ Summary
 The JavaScript DOM allows you to interact with and manipulate web documents dynamically. You can access elements, modify their properties, handle events, and create new elements, enabling you to build dynamic and interactive web pages.
 
 JavaScript DOM আপনাকে ওয়েব ডকুমেন্টগুলির সাথে মিথস্ক্রিয়া করতে এবং গতিশীলভাবে ম্যানিপুলেট করতে দেয়। আপনি উপাদানগুলি অ্যাক্সেস করতে পারেন, তাদের বৈশিষ্ট্যগুলি পরিবর্তন করতে পারেন, ইভেন্টগুলি পরিচালনা করতে পারেন এবং নতুন উপাদান তৈরি করতে পারেন, যা আপনাকে গতিশীল এবং ইন্টারেক্টিভ ওয়েব পৃষ্ঠাগুলি তৈরি করতে সক্ষম করে।
+
+
+
