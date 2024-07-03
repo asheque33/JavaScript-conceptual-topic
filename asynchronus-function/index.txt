@@ -1,0 +1,38 @@
+Asynchronous functions allow you to write promise-based code as if it were synchronous, but without blocking the main thread. They are especially useful for tasks that take some time to complete, such as network requests or file I/O operations.
+
+Basic Syntax:
+javascript
+Copy code
+async function fetchData() {
+    try {
+        let response = await fetch('https://api.example.com/data');
+        let data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+async keyword: This is placed before a function to define it as asynchronous.
+await keyword: This can only be used inside async functions. It makes JavaScript wait until the promise resolves, without blocking the execution of other code.
+Bangla Explanation:
+Asynchronous ফাংশনগুলি আপনাকে প্রমিজ-ভিত্তিক কোড সিঙ্ক্রোনাসের মতো লেখার সুযোগ দেয়, তবে মূল থ্রেডটি ব্লক না করেই। এইগুলি বিশেষভাবে দরকারী হয় যখন কিছু সময় নেওয়া কাজ করতে হয়, যেমন নেটওয়ার্ক অনুরোধ বা ফাইল I/O অপারেশন।
+
+বেসিক সিনট্যাক্স:
+javascript
+Copy code
+async function fetchData() {
+    try {
+        let response = await fetch('https://api.example.com/data');
+        let data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+async কীওয়ার্ড: এটি একটি ফাংশনের আগে রাখা হয় তাকে অ্যাসিঙ্ক্রোনাস হিসাবে সংজ্ঞায়িত করতে।
+await কীওয়ার্ড: এটি কেবল অ্যাসিঙ্ক ফাংশনের ভিতরে ব্যবহার করা যেতে পারে। এটি জাভাস্ক্রিপ্টকে প্রমিজটি রেজলভ না হওয়া পর্যন্ত অপেক্ষা করায়, অন্য কোডের এক্সিকিউশন ব্লক না করেই।
+
+
+
+
+
